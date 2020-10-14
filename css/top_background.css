@@ -5,7 +5,7 @@ body {
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-family: "DM Mono", monospace;
   font-weight: 300;
-  overflow: hidden;
+  /*overflow: hidden;*/
   color: white;
   text-align: center;
 }
@@ -215,6 +215,10 @@ h2 {
   to {
     transform: translate(-60%, 60%) rotate(360deg);
   }
+}
+
+.bottom_background{
+  background: linear-gradient(#6a1b9a, #ff4081);
 }
 
 /*# sourceMappingURL=top_background.css.map */
