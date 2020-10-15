@@ -1,0 +1,15 @@
+#nav-purple{
+    background: #6a1b9a;
+  }
+  
+.navbar-heading{
+    font-size: large;
+    color: white;
+    font-family: 'Roboto', sans-serif; 
+    font-size: large;
+}
+
+.sidenav{
+    background-color:#6a1b9a;
+    font-size: large;
+  }

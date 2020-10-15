@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(#6a1b9a, #ff4081);
   height: 100vh;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "DM Mono", monospace;
+  font-family: 'Roboto', sans-serif; /*"DM Mono", monospace;*/
   font-weight: 300;
   /*overflow: hidden;*/
   color: white;
@@ -13,10 +18,12 @@ body {
 h1 {
   font-size: 3em;
   margin-bottom: 0.2em;
+  font-family: "DM Mono", monospace;
 }
 
 h2 {
   font-size: 2em;
+  font-family: "DM Mono", monospace;
 }
 
 .main {
@@ -41,8 +48,10 @@ h2 {
   width: 30em;
   border-radius: 30em;
   background: linear-gradient(#6a1b9a, #ff4081);
+  overflow:hidden;
   align-self: flex-end;
   animation: gradient-fade 8s ease-in-out 3s infinite alternate;
+  
 }
 .main:after {
   top: 0;
@@ -220,5 +229,14 @@ h2 {
 .bottom_background{
   background: linear-gradient(#6a1b9a, #ff4081);
 }
+
+
+
+#experience, #projects, #aboutme{
+  color: black;
+}
+
+
+
 
 /*# sourceMappingURL=top_background.css.map */

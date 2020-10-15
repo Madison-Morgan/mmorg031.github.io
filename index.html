@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--Import Google Icon Font and Font Awesome-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,13 +14,46 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- All my Materialize js initialize scripts -->
 	<script src="js/scripts/carousel_init.js"></script>
 	<script src="js/scripts/collapsible_init.js"></script>
 	<script src="js/scripts/tabs_init.js"></script>
+	<script src="js/scripts/nav_init.js"></script>
 	<!-- All my css sheets are linked here -->
 	<link rel="stylesheet" href="css/top_background.css">
 	<link rel="icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/svgs/solid/cat.svg">
+	<link rel="stylesheet" href="css/timeline.css">
+	<link rel="stylesheet" href="css/navigation_bar.css">
+
+	<!-- Navigation Bar -->
+	<nav class="purple" style="padding: 0px 10px; position: fixed;">
+		<div class="nav-wrapper">
+			<a href="#" class="sidenav-trigger" data-target="mobile-nav">
+				<i class="material-icons">menu</i>
+			</a>
+
+			<a href="https://www.linkedin.com/in/madison-morgan-34a74b131" target="_blank"
+				class="btn-large transparent left"><i class="fa fa-linkedin"></i></a>
+			<a href="https://github.com/mmorg031" target="_blank" class="btn-large transparent left"><i
+					class="fa fa-github"></i></a>
+			<a href="files/Madison Morgan Resume.pdf" target="_blank" class="btn-large transparent left"><i
+					class="fa fa-file-text-o"></i></a>
+			<a href="mailto:mmorg031@uottawa.ca" target="_blank" class="btn-large transparent left"><i
+					class="fa fa-envelope-o"></i></a>
+			<ul class="right hide-on-med-and-down" >
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#aboutme">About me</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<ul class="sidenav purple" id="mobile-nav">
+		<li><a class="white-text large" href="#experience">Experience</a></li>
+		<li><a class="white-text large" href="#projects">Projects</a></li>
+		<li><a class="white-text large" href="#aboutme">About me</a></li>
+	</ul>
 </head>
 
 
@@ -29,9 +62,7 @@
 
 
 <body>
-
-
-	<div class="row container">
+	<div class="container" style="overflow:hidden">
 		<div class="arrow arrow--top">
 			<svg xmlns="http://www.w3.org/2000/svg" width="270.11" height="649.9" overflow="visible">
 				<style>
@@ -45,9 +76,9 @@
 				<g class="item-to bounce-1">
 					<path class="geo-arrow draw-in" d="M135.06 142.564L267.995 275.5 135.06 408.434 2.125 275.499z" />
 				</g>
-				<circle class="geo-arrow item-to bounce-2" cx="194.65" cy="69.54" r="7.96" />
-				<circle class="geo-arrow draw-in" cx="194.65" cy="39.5" r="7.96" />
-				<circle class="geo-arrow item-to bounce-3" cx="194.65" cy="9.46" r="7.96" />
+				<circle class="geo-arrow item-to bounce-2" cx="194.65" cy="169.54" r="7.96" />
+				<circle class="geo-arrow draw-in" cx="194.65" cy="139.5" r="7.96" />
+				<circle class="geo-arrow item-to bounce-3" cx="194.65" cy="109.46" r="7.96" />
 				<g class="geo-arrow item-to bounce-2">
 					<path class="st0 draw-in" d="M181.21 619.5l13.27 27 13.27-27zM194.48 644.5v-552" />
 				</g>
@@ -64,9 +95,9 @@
 					}
 				</style>
 				<g class="item-to bounce-1">
-					<circle class="geo-arrow item-to bounce-3" cx="15.5" cy="580.36" r="7.96" />
-					<circle class="geo-arrow draw-in" cx="15.5" cy="610.4" r="7.96" />
-					<circle class="geo-arrow item-to bounce-2" cx="15.5" cy="640.44" r="7.96" />
+					<circle class="geo-arrow item-to bounce-3" cx="15.5" cy="530.36" r="7.96" />
+					<circle class="geo-arrow draw-in" cx="15.5" cy="560.4" r="7.96" />
+					<circle class="geo-arrow item-to bounce-2" cx="15.5" cy="590.44" r="7.96" />
 					<g class="item-to bounce-2">
 						<path class="geo-arrow draw-in" d="M28.94 30.4l-13.26-27-13.27 27zM15.68 5.4v552" />
 					</g>
@@ -75,10 +106,7 @@
 		</div>
 		<div class="row main">
 			<div class="main__text-wrapper">
-				<div class="col s2">
-					<img src="images/yuna.jpg" alt="" class="circle responsive-img">
-				</div>
-				<h1 class="main__title">Hello I am Madison Morgan!</h1>
+				<h1 class="main__title">Madison Morgan</h1>
 				<h2>Aspiring Full-Stack developer and recent University of Ottawa Graduate in Computer Engineering.
 				</h2>
 				<svg xmlns="http://www.w3.org/2000/svg" class="dotted-circle" width="352" height="352"
@@ -93,62 +121,106 @@
 	</div>
 
 
-
-	<!-- Navigation Bar -->
-	<nav>
-		<div class="nav-wrapper row purple">
-			<a href="https://www.linkedin.com/in/madison-morgan-34a74b131" target="_blank" class="btn-large transparent"><i
-					class="fa fa-linkedin"></i></a>
-			<a href="https://github.com/mmorg031" target="_blank" class="btn-large transparent"><i class="fa fa-github"></i></a>
-			<a href="files/Madison Morgan Resume.pdf" target="_blank" class="btn-large transparent"><i
-					class="fa fa-file-text-o"></i></a>
-			<a href="mailto:mmorg031@uottawa.ca" target="_blank" class="btn-large transparent"><i class="fa fa-envelope-o"></i></a>
-
-			<ul id="nav-mobile tabs" class="right hide-on-med-and-down">
-				<li class="tab col s4"><a href="#experience">Experience</a></li>
-				<li class="tab col s4"><a href="#projects">Projects</a></li>
-				<li class="tab col s4"><a href="#aboutme">About me</a></li>
-			</ul>
-		</div>
-	</nav>
-
 	<div class="row">
-		<div id="experience" class="col s12 blue">Here is abt my exp</div>
-		<div id="projects" class="col s12">Here is abt my projects</div>
-	</div>
+		<div id="experience" class="col s12 white">
+			<h1>Experience</h1>
+			<div class="col s2">
 
-
-	<!-- List Projects -->
-	<div class="row">
-		<div class="card-panel hoverable col s4">
-			<div class="card-image">
-				<img src="images/sample-1.jpg">
-				<span class="card-title">Card Title</span>
 			</div>
-			<ul class="collapsible card-content">
-				<li>
-					<div class="collapsible-header">
-						<i class="material-icons">filter_drama</i>
-						First
+			<div class="col s8">
+				<div class="timeline">
+					<link href="css/timeline.css" rel="stylesheet" type="text/css">
+					<div class="container right">
+						<div class="content">
+							<h3>May 2019 - August 2019</h3>
+							<h2>Research Asistant @ <a href="https://www.zema.de/de/startseite/" target="blank">ZeMA</a>
+							</h2>
+							<p>Researched, designed, and implemented an automated assembly
+								sequence planning tool using C# in Visual Studio and Python alongside
+								CAD software.</p>
+						</div>
 					</div>
-					<div class="collapsible-body">
-						<p>Lorem ipsum dolor sit amet.</p>
+					<div class="container right">
+						<div class="content">
+							<h3>September 2018 - December 2018</h3>
+							<h2>Software Engineering Co-Op @ <a href="https://www.curtisswright.com/home/default.aspx"
+									target="blank">Curtiss Wright</a></h2>
+							<p>Used the Agile design methodology to design and implement a security
+								application to parse, verify, and sign images using Python.</p>
+						</div>
 					</div>
-				</li>
-			</ul>
-			<div class="card-action">
-				<a href="#">This is a link</a>
+					<div class="container right">
+						<div class="content">
+							<h3>January 2018 - August 2018</h3>
+							<h2>Design Verification & Automation Co-Op @ <a href="https://www.lumentum.com/en"
+									target="blank">Lumentum</a></h2>
+							<p>Developed an automated test suite to perform software verification on
+								complex optical systems using Python. Automated the collection, data
+								analysis, and visualization of a large variety of optical test results using
+								Python. Constructed a neural network to calibrate tunable lasers
+								efficiently using Tensorflow in the Anaconda IDE.</p>
+						</div>
+					</div>
+					<div class="container right">
+						<div class="content">
+							<h3>May 2017 - August 2017</h3>
+							<h2>Configuration Analyst @ <a href="https://www.ic.gc.ca/eic/site/icgc.nsf/eng/home"
+									target="blank">Innovation, Science, & Economic Development Canada (ISED)</a></h2>
+							<p>Designed, implemented, and repaired a knowledge base of articles and
+								webpages using HTML and CSS to enhance the user experience.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</container>
+
+
+
+		<div id="projects" class="col s12 white">
+			<h1>Projects</h1>
+			<!-- List Projects -->
+			<div class="row">
+				<div class="card-panel hoverable col s4">
+					<div class="card-image">
+						<img src="images/sample-1.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+					<ul class="collapsible card-content">
+						<li>
+							<div class="collapsible-header">
+								<i class="material-icons">filter_drama</i>
+								First
+							</div>
+							<div class="collapsible-body">
+								<p>Lorem ipsum dolor sit amet.</p>
+							</div>
+						</li>
+					</ul>
+					<div class="card-action">
+						<a href="#">This is a link</a>
+					</div>
+				</div>
+
+				<div class="card-panel hoverable col s4">
+					<!-- Promo Content 2 goes here -->
+				</div>
+				<div class="card-panel hoverable col s4">
+					<!-- Promo Content 3 goes here -->
+				</div>
+
 			</div>
 		</div>
 
-		<div class="card-panel hoverable col s4">
-			<!-- Promo Content 2 goes here -->
+		<div id="aboutme" class="col s12 white">
+			<h1>A Little More About Me</h1>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta magni, cumque praesentium voluptate
+				repellat
+				quos placeat consectetur qui natus esse doloribus nemo, quo adipisci harum, temporibus commodi
+				voluptatum
+				est nostrum.</p>
 		</div>
-		<div class="card-panel hoverable col s4">
-			<!-- Promo Content 3 goes here -->
-		</div>
-
-	</div>
+		</section>
 
 
 
@@ -156,7 +228,7 @@
 
 
 
-	<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 
@@ -175,9 +247,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer-copyright">
-		<div class="container center-align">Built by Madison Morgan | 2020</div>
-	</div>
+	<div class="container center-align">Built by Madison Morgan | 2020</div>
 </footer>
 
 
