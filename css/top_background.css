@@ -236,7 +236,9 @@ h2 {
   color: black;
 }
 
-
+.container{
+  width: 100%;
+}
 
 
 /*# sourceMappingURL=top_background.css.map */
