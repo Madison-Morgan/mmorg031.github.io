@@ -22,4 +22,5 @@ For the inspiration thanks!
 * https://www.behance.net/gallery/105679587/Portfolio-Website?tracking_source=search_projects_recommended%7Cpersonal%20website
 ### CodePen
 * https://codepen.io/joyanna/pen/NWGYLNW
+* https://codepen.io/brady_wright/details/NNOvrW
 ### Dribble

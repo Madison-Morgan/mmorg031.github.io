@@ -20,6 +20,9 @@
 	<script src="js/scripts/collapsible_init.js"></script>
 	<script src="js/scripts/tabs_init.js"></script>
 	<script src="js/scripts/nav_init.js"></script>
+	<script src="js/scripts/timeline_init.js"></script>
+	<!-- Import Bootstrap Here -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/> -->
 	<!-- All my css sheets are linked here -->
 	<link rel="stylesheet" href="css/top_background.css">
 	<link rel="icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/svgs/solid/cat.svg">
@@ -27,7 +30,7 @@
 	<link rel="stylesheet" href="css/navigation_bar.css">
 
 	<!-- Navigation Bar -->
-	<nav class="purple" style="padding: 0px 10px; position: fixed;">
+	<nav class="purple" style="padding: 0px 10px; position: absolute;">
 		<div class="nav-wrapper">
 			<a href="#" class="sidenav-trigger" data-target="mobile-nav">
 				<i class="material-icons">menu</i>
@@ -63,7 +66,7 @@
 
 
 <body>
-	<div class="container" style="overflow:hidden">
+	<div id="top-background" class="container" style="overflow:hidden">
 		<div class="arrow arrow--top">
 			<svg xmlns="http://www.w3.org/2000/svg" width="270.11" height="649.9" overflow="visible">
 				<style>
@@ -77,11 +80,11 @@
 				<g class="item-to bounce-1">
 					<path class="geo-arrow draw-in" d="M135.06 142.564L267.995 275.5 135.06 408.434 2.125 275.499z" />
 				</g>
-				<circle class="geo-arrow item-to bounce-2" cx="194.65" cy="169.54" r="7.96" />
-				<circle class="geo-arrow draw-in" cx="194.65" cy="139.5" r="7.96" />
-				<circle class="geo-arrow item-to bounce-3" cx="194.65" cy="109.46" r="7.96" />
+				<circle class="geo-arrow item-to bounce-2" cx="194.65" cy="179.54" r="7.96" />
+				<circle class="geo-arrow draw-in" cx="194.65" cy="149.5" r="7.96" />
+				<circle class="geo-arrow item-to bounce-3" cx="194.65" cy="119.46" r="7.96" />
 				<g class="geo-arrow item-to bounce-2">
-					<path class="st0 draw-in" d="M181.21 619.5l13.27 27 13.27-27zM194.48 644.5v-552" />
+					<path class="st0 draw-in" d="M181.21 630.5l13.27 27 13.27-27zM194.48 655.5v-552" />
 				</g>
 			</svg>
 		</div>
@@ -100,7 +103,7 @@
 					<circle class="geo-arrow draw-in" cx="15.5" cy="560.4" r="7.96" />
 					<circle class="geo-arrow item-to bounce-2" cx="15.5" cy="590.44" r="7.96" />
 					<g class="item-to bounce-2">
-						<path class="geo-arrow draw-in" d="M28.94 30.4l-13.26-27-13.27 27zM15.68 5.4v552" />
+						<path class="geo-arrow draw-in" d="M28.94 90.4l-13.26-27-13.27 27zM15.68 65.4v552" />
 					</g>
 				</g>
 			</svg>
@@ -122,114 +125,138 @@
 	</div>
 
 
-	<div class="row">
-		<div id="experience" class="col s12 white">
-			<h1>Experience</h1>
-			<div class="col s2">
 
-			</div>
-			<div class="col s8">
-				<div class="timeline">
-					<link href="css/timeline.css" rel="stylesheet" type="text/css">
-					<div class="container right">
-						<div class="content">
-							<h3>May 2019 - August 2019</h3>
-							<h2>Research Asistant @ <a href="https://www.zema.de/de/startseite/" target="blank">ZeMA</a>
-							</h2>
-							<p>Researched, designed, and implemented an automated assembly
-								sequence planning tool using C# in Visual Studio and Python alongside
-								CAD software.</p>
-						</div>
-					</div>
-					<div class="container right">
-						<div class="content">
-							<h3>September 2018 - December 2018</h3>
-							<h2>Software Engineering Co-Op @ <a href="https://www.curtisswright.com/home/default.aspx"
-									target="blank">Curtiss Wright</a></h2>
-							<p>Used the Agile design methodology to design and implement a security
-								application to parse, verify, and sign images using Python.</p>
-						</div>
-					</div>
-					<div class="container right">
-						<div class="content">
-							<h3>January 2018 - August 2018</h3>
-							<h2>Design Verification & Automation Co-Op @ <a href="https://www.lumentum.com/en"
-									target="blank">Lumentum</a></h2>
-							<p>Developed an automated test suite to perform software verification on
-								complex optical systems using Python. Automated the collection, data
-								analysis, and visualization of a large variety of optical test results using
-								Python. Constructed a neural network to calibrate tunable lasers
-								efficiently using Tensorflow in the Anaconda IDE.</p>
-						</div>
-					</div>
-					<div class="container right">
-						<div class="content">
-							<h3>May 2017 - August 2017</h3>
-							<h2>Configuration Analyst @ <a href="https://www.ic.gc.ca/eic/site/icgc.nsf/eng/home"
-									target="blank">Innovation, Science, & Economic Development Canada (ISED)</a></h2>
-							<p>Designed, implemented, and repaired a knowledge base of articles and
-								webpages using HTML and CSS to enhance the user experience.</p>
-						</div>
-					</div>
-				</div>
-			</div>
+
+	<div id="experience" class="row example-split white">
+		<div class="col-md-12 example-title">
+			<h3>Experience</h3>
 		</div>
-		</container>
-
-
-
-		<div id="projects" class="col s12 white">
-			<h1>Projects</h1>
-			<!-- List Projects -->
-			<div class="row">
-				<div class="card-panel hoverable col s4">
-					<div class="card-image">
-						<img src="images/sample-1.jpg">
-						<span class="card-title">Card Title</span>
+		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+			<ul class="timeline timeline-split">
+				<li class="timeline-item">
+					<div class="timeline-info">
+						<span>January 2020 - April 2020</span>
 					</div>
-					<ul class="collapsible card-content">
-						<li>
-							<div class="collapsible-header">
-								<i class="material-icons">filter_drama</i>
-								First
-							</div>
-							<div class="collapsible-body">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-					</ul>
-					<div class="card-action">
-						<a href="#">This is a link</a>
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h4 class="timeline-title">Junior Programmer @ <a href="https://www.canada.ca/en/treasury-board-secretariat.html" target="blank">Treasurary Board of Canada Secretariat</a></h4>
+						<p>Developed a Python script to automate the process of generating an informative bi-weekly dashboard by extracting data from multiple sources and transforming the data accordingly.</p>
 					</div>
-				</div>
+				</li>
+				<li class="timeline-item">
+					<div class="timeline-info">
+						<span>May 2019 - August 2019</span>
+					</div>
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h4 class="timeline-title">Research Assistant @ <a href="https://www.zema.de/de/startseite/" target="blank">ZeMA</a></h4>
+						<p>Researched, designed, and implemented an automated assembly
+							sequence planning tool using C# in Visual Studio and Python alongside
+							CAD software. </p>
+					</div>
+				</li>
+				<li class="timeline-item">
+					<div class="timeline-info">
+						<span>September 2018 - December 2018</span>
+					</div>
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h4 class="timeline-title">Embedded Software Engineer @ <a href="https://www.curtisswright.com/home/default.aspx" target="blank">Curtiss-Wright Defense Solutions</a></h4>
+						<p>developed a security software application to parse, verify and sign images. I also designed a paired command line executable tool to run security application functionality. All while using the agile design methodology and Kanban boards. </p>
+					</div>
+				</li>
+				<li class="timeline-item">
+					<div class="timeline-info">
+						<span>May 2018 - August 2018</span>
+					</div>
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h4 class="timeline-title">Automation Engineer @ <a href="https://www.lumentum.com/en" target="blank">Lumentum</a></h4>
+						<p>Developed a machine learning algorithm to automate the calibration of tunable lasers using TensorFlow.  Constructed a neural network to calibrate tunable lasers
+							efficiently using Tensorflow in the Anaconda IDE. </p>
+					</div>
+				</li>
+				<li class="timeline-item">
+					<div class="timeline-info">
+						<span>January 2018 - April 2018</span>
+					</div>
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h4 class="timeline-title">Design Verification Engineer @ <a href="https://www.lumentum.com/en" target="blank">Lumentum</a></h4>
+						<p>Developed an automated test suite to perform software verification on
+							complex optical systems using Python. Automated the collection, data
+							analysis, and visualization of a large variety of optical test results using
+							Python.</p>
+					</div>
+				</li>
+				<li class="timeline-item">
+					<div class="timeline-info">
+						<span>May 2017 - August 2017</span>
+					</div>
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h4 class="timeline-title">IT Service Analyst @ <a href="http://www.ic.gc.ca/eic/site/icgc.nsf/eng/home" target="blank">ISED</a></h4>
+						<p>Worked as a Configuration Management addition to the team, where I aided my team members in the development of a Configuration Management Data Base and other IT Service Management Tasks. Designed, implemented, and repaired a knowledge base of articles and
+							webpages using HTML and CSS to enhance the user experience.</p>
+					</div>
+				</li>
 
-				<div class="card-panel hoverable col s4">
-					<!-- Promo Content 2 goes here -->
-				</div>
-				<div class="card-panel hoverable col s4">
-					<!-- Promo Content 3 goes here -->
-				</div>
+		</div>
+	</div>
 
+
+	<div id="projects" class="col s12 white">
+		<h1>Projects</h1>
+		<!-- List Projects -->
+		<div class="row">
+			<div class="card-panel hoverable col s4">
+				<div class="card-image">
+					<img src="images/sample-1.jpg">
+					<span class="card-title">Card Title</span>
+				</div>
+				<ul class="collapsible card-content">
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">filter_drama</i>
+							First
+						</div>
+						<div class="collapsible-body">
+							<p>Lorem ipsum dolor sit amet.</p>
+						</div>
+					</li>
+				</ul>
+				<div class="card-action">
+					<a href="#">This is a link</a>
+				</div>
 			</div>
+
+			<div class="card-panel hoverable col s4">
+				<!-- Promo Content 2 goes here -->
+			</div>
+			<div class="card-panel hoverable col s4">
+				<!-- Promo Content 3 goes here -->
+			</div>
+
 		</div>
+	</div>
 
-		<div id="aboutme" class="col s12 white">
-			<h1>A Little More About Me</h1>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta magni, cumque praesentium voluptate
-				repellat
-				quos placeat consectetur qui natus esse doloribus nemo, quo adipisci harum, temporibus commodi
-				voluptatum
-				est nostrum.</p>
-		</div>
-		</section>
-
-
-
+	<div id="aboutme" class="col s12 white">
+		<h1>A Little More About Me</h1>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta magni, cumque praesentium voluptate
+			repellat
+			quos placeat consectetur qui natus esse doloribus nemo, quo adipisci harum, temporibus commodi
+			voluptatum
+			est nostrum.</p>
+	</div>
+	</section>
 
 
 
 
-		<script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+
+	<script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 
@@ -238,17 +265,15 @@
 
 
 <!-- Footer -->
-<footer class="page-footer bottom_background">
-	<div class="container">
-		<div class="row center-align">
-			<div class="col s12">
-				<h5 class="white-text">Thanks for Visiting!</h5>
-				<p class="grey-text text-lighten-4">You can contact me anytime.
-				</p>
-			</div>
+<footer class="page-footer bottom-background">
+	<div class="row center-align bottom-background">
+		<div class="col s12 bottom-background">
+			<h5 class="white-text">Thanks for Visiting!</h5>
+			<p class="grey-text text-lighten-4">You can contact me anytime.
+			</p>
 		</div>
 	</div>
-	<div class="container center-align">Built by Madison Morgan | 2020</div>
+	<div class="container center-align" style="background: #6a1b9a;">Built by Madison Morgan | 2020</div>
 </footer>
 
 

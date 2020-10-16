@@ -4,8 +4,13 @@ html{
   scroll-behavior: smooth;
 }
 
+#top-background{
+  
+}
+
 body {
-  background: linear-gradient(#6a1b9a, #ff4081);
+ /* background: grey; */
+ background: linear-gradient(#6a1b9a, #ff4081);
   height: 100vh;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Roboto', sans-serif; /*"DM Mono", monospace;*/
@@ -226,7 +231,7 @@ h2 {
   }
 }
 
-.bottom_background{
+.bottom-background{
   background: linear-gradient(#6a1b9a, #ff4081);
 }
 
