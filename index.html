@@ -9,55 +9,24 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+	<!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
 	<!-- Compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- All my Materialize js initialize scripts -->
-	<script src="js/scripts/carousel_init.js"></script>
-	<script src="js/scripts/collapsible_init.js"></script>
-	<script src="js/scripts/tabs_init.js"></script>
 	<script src="js/scripts/nav_init.js"></script>
 	<script src="js/scripts/timeline_init.js"></script>
 	<!-- Import Bootstrap Here -->
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/> -->
 	<!-- All my css sheets are linked here -->
-	<link rel="stylesheet" href="css/top_background.css">
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/svgs/solid/cat.svg">
 	<link rel="stylesheet" href="css/timeline.css">
 	<link rel="stylesheet" href="css/navigation_bar.css">
 
-	<!-- Navigation Bar -->
-	<nav class="purple" style="padding: 0px 10px; position: absolute;">
-		<div class="nav-wrapper">
-			<a href="#" class="sidenav-trigger" data-target="mobile-nav">
-				<i class="material-icons">menu</i>
-			</a>
-			<ul class="left">
-				<li><a href="https://www.linkedin.com/in/madison-morgan-34a74b131" target="_blank"
-						class="btn-large transparent left"><i class="fa fa-linkedin"></i></a></li>
-				<li><a href="https://github.com/mmorg031" target="_blank" class="btn-large transparent left"><i
-							class="fa fa-github"></i></a></li>
-				<li><a href="files/Madison Morgan Resume.pdf" target="_blank" class="btn-large transparent left"><i
-							class="fa fa-file-text-o"></i></a></li>
-				<li><a href="mailto:mmorg031@uottawa.ca" target="_blank" class="btn-large transparent left"><i
-							class="fa fa-envelope-o"></i></a></li>
-			</ul>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#aboutme">About me</a></li>
-			</ul>
-		</div>
-	</nav>
 
-	<ul class="sidenav purple" id="mobile-nav">
-		<li><a class="white-text large" href="#experience">Experience</a></li>
-		<li><a class="white-text large" href="#projects">Projects</a></li>
-		<li><a class="white-text large" href="#aboutme">About me</a></li>
-	</ul>
 </head>
 
 
@@ -66,66 +35,137 @@
 
 
 <body>
-	<div id="top-background" class="container" style="overflow:hidden">
-		<div class="arrow arrow--top">
-			<svg xmlns="http://www.w3.org/2000/svg" width="270.11" height="649.9" overflow="visible">
-				<style>
-					.geo-arrow {
-						fill: none;
-						stroke: #fff;
-						stroke-width: 2;
-						stroke-miterlimit: 10
-					}
-				</style>
-				<g class="item-to bounce-1">
-					<path class="geo-arrow draw-in" d="M135.06 142.564L267.995 275.5 135.06 408.434 2.125 275.499z" />
-				</g>
-				<circle class="geo-arrow item-to bounce-2" cx="194.65" cy="179.54" r="7.96" />
-				<circle class="geo-arrow draw-in" cx="194.65" cy="149.5" r="7.96" />
-				<circle class="geo-arrow item-to bounce-3" cx="194.65" cy="119.46" r="7.96" />
-				<g class="geo-arrow item-to bounce-2">
-					<path class="st0 draw-in" d="M181.21 630.5l13.27 27 13.27-27zM194.48 655.5v-552" />
-				</g>
-			</svg>
+	<!-- nav overlay -->
+	<div class="nav-overlay">
+		<a class="toggle-nav"><i class="fa fa-times"></i></a>
+		<a href="#skills">Skills</a>
+		<a href="#experience">Experience</a>
+		<a href="#projects">Projects</a>
+		<a href="#aboutme">About me</a>
+		<a href="#hire">Hire</a>
+	</div>
+	<!-- end nav overlay -->
+
+	<!-- main nav -->
+	<nav>
+		<div class="container nav">
+			<span></span>
+			<div class="nav-items">
+				<a href="#skills">Skills</a>
+				<a href="#experience">Experience</a>
+				<a href="#projects">Projects</a>
+				<a href="#aboutme">About me</a>
+				<a href="#hire">Hire</a>
+				<a class="toggle-nav"><i class="fa fa-bars"></i></a>
+			</div>
 		</div>
-		<div class="arrow arrow--bottom">
-			<svg xmlns="http://www.w3.org/2000/svg" width="31.35" height="649.9" overflow="visible">
-				<style>
-					.geo-arrow {
-						fill: none;
-						stroke: #fff;
-						stroke-width: 2;
-						stroke-miterlimit: 10
-					}
-				</style>
-				<g class="item-to bounce-1">
-					<circle class="geo-arrow item-to bounce-3" cx="15.5" cy="530.36" r="7.96" />
-					<circle class="geo-arrow draw-in" cx="15.5" cy="560.4" r="7.96" />
-					<circle class="geo-arrow item-to bounce-2" cx="15.5" cy="590.44" r="7.96" />
-					<g class="item-to bounce-2">
-						<path class="geo-arrow draw-in" d="M28.94 90.4l-13.26-27-13.27 27zM15.68 65.4v552" />
-					</g>
-				</g>
-			</svg>
+	</nav>
+	<!-- end main nav -->
+
+
+	<section class="bg-hero">
+		<div id="shape-circle-1" class="shape"></div>
+		<div id="shape-circle-2" class="shape"></div>
+		<div id="particles"></div>
+		<div class="container flex">
+			<div class="col-3">
+				<h1>Madison Morgan</h1>
+				<h2>Aspiring Full-Stack Developer</h2>
+			</div>
+			<div class="social-buttons">
+				<div class="social-buttons-item"><a href="https://www.linkedin.com/in/madison-morgan-34a74b131"
+						target="_blank" class="btn-large transparent left"><i class="fa fa-linkedin"></i></a></div>
+				<div class="social-buttons-item"><a href="https://github.com/mmorg031" target="_blank"
+						class="btn-large transparent left"><i class="fa fa-github"></i></a></div>
+				<div class="social-buttons-item"><a href="files/Madison Morgan Resume.pdf" target="_blank"
+						class="btn-large transparent left"><i class="fa fa-file-text-o"></i></a></div>
+				<div class="social-buttons-item"><a href="mailto:mmorg031@uottawa.ca" target="_blank"
+						class="btn-large transparent left"><i class="fa fa-envelope-o"></i></a></div>
+			</div>
+			<div class="col-2"></div>
 		</div>
-		<div class="row main">
-			<div class="main__text-wrapper">
-				<h1 class="main__title">Madison Morgan</h1>
-				<h2>Aspiring Full-Stack developer and recent University of Ottawa Graduate in Computer Engineering.
-				</h2>
-				<svg xmlns="http://www.w3.org/2000/svg" class="dotted-circle" width="352" height="352"
-					overflow="visible">
-					<circle cx="176" cy="176" r="174" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10"
-						stroke-dasharray="12.921,11.9271" />
-				</svg>
+	</section>
+
+	<!-- skills -->
+	<section id="skills" class="bg-dark angle-right-top angle-right-bottom">
+		<div class="container skills padding-v-lg">
+			<div value="-1" class="slider-arrow text-center">&lsaquo;</div>
+			<div class="col">
+				<h2 class="text-center secondary-header text-white">Skills</h2>
+
+				<!-- skill slider -->
+				<div class="skill" style="display: none">
+					<h4 class="text-white">Frontend</h4>
+					<ul>
+						<li>JavaScript (ES6)</li>
+						<li>jQuery</li>
+						<li>CSS3</li>
+						<li>HTML5</li>
+						<li>Canvas</li>
+						<li>Responsive Design</li>
+					</ul>
+				</div>
+
+				<div class="skill" style="display: none">
+					<h4 class="text-white">Backend</h4>
+					<ul>
+						<li>PHP</li>
+						<li>MySQL</li>
+						<li>CodeIgniter</li>
+						<li>Apache</li>
+						<li>Hosting</li>
+					</ul>
+				</div>
+
+				<div class="skill" style="display: none">
+					<h4 class="text-white">Tools</h4>
+					<ul>
+						<li>Composer</li>
+						<li>SCSS</li>
+						<li>Gulp</li>
+						<li>Github</li>
+						<li>GIT</li>
+						<li>Bower</li>
+					</ul>
+				</div>
+
+				<div class="skill" style="display: none">
+					<h4 class="text-white">Protocols and Patterns</h4>
+					<ul>
+						<li>HTTP</li>
+						<li>MVC/MV*</li>
+						<li>SOLID</li>
+						<li>AJAX</li>
+						<li>Websockets</li>
+					</ul>
+				</div>
+
+				<div class="skill" style="display: none">
+					<h4 class="text-white">Soft Skills</h4>
+					<ul>
+						<li>Excellent Communicator</li>
+						<li>Problem Solver</li>
+						<li>Analytical</li>
+						<li>Focused</li>
+						<li>Friendly</li>
+						<li>Eager to learn</li>
+					</ul>
+				</div>
+
+				<div class="skill" style="display: none">
+					<h4 class="text-white">Spoken Languages</h4>
+					<ul>
+						<li>English (Native)</li>
+						<li>French (Fluent)</li>
+					</ul>
+				</div>
+				<!-- end skill slider -->
 
 			</div>
-
+			<div value="1" class="slider-arrow text-center">&rsaquo;</div>
 		</div>
-	</div>
-
-
-
+	</section>
+	<!-- end skills -->
 
 	<div id="experience" class="row example-split white">
 		<div class="col-md-12 example-title">
@@ -139,8 +179,12 @@
 					</div>
 					<div class="timeline-marker"></div>
 					<div class="timeline-content">
-						<h4 class="timeline-title">Junior Programmer @ <a href="https://www.canada.ca/en/treasury-board-secretariat.html" target="blank">Treasurary Board of Canada Secretariat</a></h4>
-						<p>Developed a Python script to automate the process of generating an informative bi-weekly dashboard by extracting data from multiple sources and transforming the data accordingly.</p>
+						<h4 class="timeline-title">Junior Programmer @ <a
+								href="https://www.canada.ca/en/treasury-board-secretariat.html"
+								target="blank">Treasurary Board of Canada Secretariat</a></h4>
+						<p>Developed a Python script to automate the process of generating an informative bi-weekly
+							dashboard by extracting data from multiple sources and transforming the data accordingly.
+						</p>
 					</div>
 				</li>
 				<li class="timeline-item">
@@ -149,7 +193,8 @@
 					</div>
 					<div class="timeline-marker"></div>
 					<div class="timeline-content">
-						<h4 class="timeline-title">Research Assistant @ <a href="https://www.zema.de/de/startseite/" target="blank">ZeMA</a></h4>
+						<h4 class="timeline-title">Research Assistant @ <a href="https://www.zema.de/de/startseite/"
+								target="blank">ZeMA</a></h4>
 						<p>Researched, designed, and implemented an automated assembly
 							sequence planning tool using C# in Visual Studio and Python alongside
 							CAD software. </p>
@@ -161,8 +206,12 @@
 					</div>
 					<div class="timeline-marker"></div>
 					<div class="timeline-content">
-						<h4 class="timeline-title">Embedded Software Engineer @ <a href="https://www.curtisswright.com/home/default.aspx" target="blank">Curtiss-Wright Defense Solutions</a></h4>
-						<p>developed a security software application to parse, verify and sign images. I also designed a paired command line executable tool to run security application functionality. All while using the agile design methodology and Kanban boards. </p>
+						<h4 class="timeline-title">Embedded Software Engineer @ <a
+								href="https://www.curtisswright.com/home/default.aspx" target="blank">Curtiss-Wright
+								Defense Solutions</a></h4>
+						<p>developed a security software application to parse, verify and sign images. I also designed a
+							paired command line executable tool to run security application functionality. All while
+							using the agile design methodology and Kanban boards. </p>
 					</div>
 				</li>
 				<li class="timeline-item">
@@ -171,8 +220,10 @@
 					</div>
 					<div class="timeline-marker"></div>
 					<div class="timeline-content">
-						<h4 class="timeline-title">Automation Engineer @ <a href="https://www.lumentum.com/en" target="blank">Lumentum</a></h4>
-						<p>Developed a machine learning algorithm to automate the calibration of tunable lasers using TensorFlow.  Constructed a neural network to calibrate tunable lasers
+						<h4 class="timeline-title">Automation Engineer @ <a href="https://www.lumentum.com/en"
+								target="blank">Lumentum</a></h4>
+						<p>Developed a machine learning algorithm to automate the calibration of tunable lasers using
+							TensorFlow. Constructed a neural network to calibrate tunable lasers
 							efficiently using Tensorflow in the Anaconda IDE. </p>
 					</div>
 				</li>
@@ -182,7 +233,8 @@
 					</div>
 					<div class="timeline-marker"></div>
 					<div class="timeline-content">
-						<h4 class="timeline-title">Design Verification Engineer @ <a href="https://www.lumentum.com/en" target="blank">Lumentum</a></h4>
+						<h4 class="timeline-title">Design Verification Engineer @ <a href="https://www.lumentum.com/en"
+								target="blank">Lumentum</a></h4>
 						<p>Developed an automated test suite to perform software verification on
 							complex optical systems using Python. Automated the collection, data
 							analysis, and visualization of a large variety of optical test results using
@@ -195,8 +247,11 @@
 					</div>
 					<div class="timeline-marker"></div>
 					<div class="timeline-content">
-						<h4 class="timeline-title">IT Service Analyst @ <a href="http://www.ic.gc.ca/eic/site/icgc.nsf/eng/home" target="blank">ISED</a></h4>
-						<p>Worked as a Configuration Management addition to the team, where I aided my team members in the development of a Configuration Management Data Base and other IT Service Management Tasks. Designed, implemented, and repaired a knowledge base of articles and
+						<h4 class="timeline-title">IT Service Analyst @ <a
+								href="http://www.ic.gc.ca/eic/site/icgc.nsf/eng/home" target="blank">ISED</a></h4>
+						<p>Worked as a Configuration Management addition to the team, where I aided my team members in
+							the development of a Configuration Management Data Base and other IT Service Management
+							Tasks. Designed, implemented, and repaired a knowledge base of articles and
 							webpages using HTML and CSS to enhance the user experience.</p>
 					</div>
 				</li>
@@ -205,8 +260,21 @@
 	</div>
 
 
-	<div id="projects" class="col s12 white">
-		<h1>Projects</h1>
+
+
+	<div id="eduandskills" class="row white">
+		<div class="col-md-12 example-title">
+			<h3>Education & Skills</h3>
+		</div>
+	</div>
+
+
+
+
+	<div id="projects" class="row example-split white">
+		<div class="col-md-12 example-title">
+			<h3>Projects</h3>
+		</div>
 		<!-- List Projects -->
 		<div class="row">
 			<div class="card-panel hoverable col s4">
@@ -240,15 +308,16 @@
 		</div>
 	</div>
 
-	<div id="aboutme" class="col s12 white">
-		<h1>A Little More About Me</h1>
+	<div id="aboutme" class="row example-split white">
+		<div class="col-md-12 example-title">
+			<h3>About Me</h3>
+		</div>
 		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta magni, cumque praesentium voluptate
 			repellat
 			quos placeat consectetur qui natus esse doloribus nemo, quo adipisci harum, temporibus commodi
 			voluptatum
 			est nostrum.</p>
 	</div>
-	</section>
 
 
 
@@ -265,15 +334,16 @@
 
 
 <!-- Footer -->
-<footer class="page-footer bottom-background">
+<!-- TODO LINK SOCIALS LIKE CODEPEN AND LEET CODE-->
+<footer class="page-footer bottom-background grey darken-4" style="background: #212121">
 	<div class="row center-align bottom-background">
 		<div class="col s12 bottom-background">
 			<h5 class="white-text">Thanks for Visiting!</h5>
-			<p class="grey-text text-lighten-4">You can contact me anytime.
+			<p class="white-text">You can contact me anytime.
 			</p>
 		</div>
 	</div>
-	<div class="container center-align" style="background: #6a1b9a;">Built by Madison Morgan | 2020</div>
+	<div class="container center-align grey darken-4">Built by Madison Morgan | 2020</div>
 </footer>
 
 

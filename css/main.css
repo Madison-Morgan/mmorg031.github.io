@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
+.top-background{
+  background: black;
+}
+
+.social-buttons{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.social-buttons-items{
+  align-self: auto;
+}
+
+body {
+ /* background: grey; */
+  /*background: linear-gradient(#6a1b9a, #ff4081);*/
+  height: 100vh;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-family: 'Roboto', sans-serif; /*"DM Mono", monospace;*/
+  font-weight: 300;
+  /*overflow: hidden;*/
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+  font-family: "DM Mono", monospace;
+  color: white;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: "DM Mono", monospace;
+  color:white;
+}
+
+h3{
+  font-family: "DM Mono", monospace;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#experience, #projects, #aboutme{
+  color: black;
+}
+
+.container{
+  width: 100%;
+}
+
+
+/*# sourceMappingURL=top_background.css.map */

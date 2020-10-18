@@ -1,11 +1,20 @@
 
 a {
-  color: #6a1b9a;
+  color: #802bb1;
 }
 a:hover {
-  color: #a241de;
+  color: rgba(128, 43, 177,0.5);
   text-decoration: none;
 }
+
+mobile-nav.a{
+  color: #802bb1;
+}
+mobile-nav.a:hover {
+  color: rgba(128, 43, 177,0.5);
+  text-decoration: none;
+}
+
 
 .example-title {
   text-align: center;
@@ -63,7 +72,7 @@ a:hover {
   width: 15px;
 }
 .timeline-marker:before {
-  background: #6a1b9a;
+  background: #802bb1;
   border: 3px solid transparent;
   border-radius: 100%;
   content: "";
@@ -91,7 +100,7 @@ a:hover {
 
 .timeline-item:not(.period):hover .timeline-marker:before {
   background: transparent;
-  border: 3px solid #6a1b9a;
+  border: 3px solid #802bb1;
 }
 
 /*----- TIMELINE CONTENT -----*/
@@ -239,10 +248,10 @@ a:hover {
 ----------------------------------------------*/
 .marker-outline .timeline-marker:before {
   background: transparent;
-  border-color: #6a1b9a;
+  border-color: #802bb1;
 }
 .marker-outline .timeline-item:hover .timeline-marker:before {
-  background: #6a1b9a;
+  background: #802bb1;
 }
 
 /*# sourceMappingURL=timeline.css.map */
