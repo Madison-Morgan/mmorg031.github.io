@@ -333,10 +333,11 @@ footer .footer-main h3 a:hover {
 }
 footer .footer-copyright {
   padding: 30px 0;
-  background-color: #005a75;
+  background-color: #2D283E;
 }
 footer .footer-copyright h5 {
   font-size: 18px;
+  color: #D1D7E0;
   font-family: "Consolas", monaco, monospace;
 }
 footer .footer-copyright p {
@@ -350,9 +351,9 @@ footer .footer-copyright p {
   padding: 60px;
 }
 .contact input {
-  background-color: #005a75;
+  background-color: #4c495D;
   border: none;
-  color: black;
+  color: #D1D7E0;
   display: block;
   font-family: "Consolas", monaco, monospace;
   font-size: 14px;
@@ -361,9 +362,9 @@ footer .footer-copyright p {
   width: 100%;
 }
 .contact textarea {
-  background-color: #005a75;
+  background-color: #4c495D;
   border: none;
-  color: black;
+  color: #D1D7E0;
   display: block;
   font-family: "Consolas", monaco, monospace;
   font-size: 14px;
@@ -372,9 +373,9 @@ footer .footer-copyright p {
   width: 100%;
 }
 .contact button {
-  background-color: #00C1F7;
+  background-color: #4c495d;
   border: none;
-  color: black;
+  color: #D1D7E0;
   display: block;
   font-family: "Consolas", monaco, monospace;
   font-size: 18px;
@@ -383,7 +384,7 @@ footer .footer-copyright p {
   transition: background 0.2s;
 }
 .contact button:hover {
-  background-color: #2bd1ff;
+  background-color: #564f56;
   cursor: pointer;
 }
 
