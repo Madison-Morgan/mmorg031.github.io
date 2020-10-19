@@ -1,13 +1,262 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* General CSS applicable to all */
 html {
   scroll-behavior: smooth;
 }
 
-.top-background {
-  background: black;
+body {
+  height: 100vh;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-family: "Comfortaa", cursive;
+  font-weight: 300;
+  /*overflow: hidden;*/
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 42px;
+}
+h2 span {
+  font-size: 64px;
+}
+
+h4 {
+  font-family: Consolas, monaco, monospace;
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+  font-family: Consolas, monaco, monospace;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+  h2 span {
+    font-size: 42px;
+  }
+
+  h4 {
+    font-family: Consolas, monaco, monospace;
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+
+
+
+/* Some customized texts */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-white{
+  color: white;
+}
+
+.text-brand {
+  color: #802bb1;
+}
+
+
+/* some customized backgrounds */
+.bg-dark {
+  background-color: black;
+  z-index: 1;
+}
+
+.bg-black {
+  background-color: black;
+}
+.bg-black .container {
+  position: inherit;
+}
+
+.bg-light {
+  background-color: #4c495d;
+  z-index: 1;
+}
+.bg-light .container {
+  position: inherit;
+  z-index: 1;
+}
+
+.bg-brand {
+  background-color: #00c1f7;
+}
+.bg-brand .container {
+  position: inherit;
+  z-index: 2;
+}
+
+
+
+/* Some Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: background 0.2s;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-sm {
+  font-size: 14px;
+  padding: 7px 20px;
+  border-radius: 4px;
+}
+
+.btn-dark {
+  color: black;
+  background-color: #212121;
+}
+.btn-dark:hover {
+  background-color: #005a75;
+}
+
+.btn-outline {
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 3px;
+}
+
+.btn-outline-black {
+  color: black;
+  border-color: black;
+}
+.btn-outline-black:hover {
+  color: #212121;
+  background-color: black;
+}
+
+.btn-outline-dark {
+  color: #212121;
+  border-color: #212121;
+}
+.btn-outline-dark:hover {
+  color: black;
+  background-color: #212121;
+}
+
+/* Some Padding definitions */
+
+.padding-v-md {
+  padding: 60px 15px;
+}
+
+.padding-v-lg {
+  padding: 120px 15px;
+}
+
+.padding-md {
+  padding: 60px 15px;
+}
+
+.padding-sm {
+  padding: 15px 5px;
+}
+
+.height-min-full {
+  min-height: 100%;
+}
+
+.d-block {
+  display: block;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+
+/* Some Flex Defs */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.col-2 {
+  flex: 2;
+  margin: 0 15px;
+}
+
+.col-3 {
+  flex: 3;
+  margin: 0 15px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+}
+section {
+  position: relative;
+}
+
+
+
+
+
+/* Social Buttons on Main Title */
 .social-buttons {
   display: flex;
   flex-flow: row wrap;
@@ -24,66 +273,111 @@ html {
   justify-content: space-around;
 }
 
-#hire .bg-dark {
-  background-color: #802bb1;
+
+
+
+
+/* SVG picture at bottom */
+img{
+  height:auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  z-index: 9999;
 }
 
-body {
-  /* background: grey; */
-  /*background: linear-gradient(#6a1b9a, #ff4081);*/
-  height: 100vh;
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Roboto", sans-serif; /*"DM Mono", monospace;*/
-  font-weight: 300;
-  /*overflow: hidden;*/
-  color: black;
-  text-align: center;
+@media screen and (min-width: 769px){
+  .hero-foot img.is-bottom {
+    margin-bottom: -0.45rem;
+    max-width: 860px;
+  }
 }
 
-h1 {
-  font-size: 3em;
-  margin-bottom: 0.2em;
-  font-family: "DM Mono", monospace;
-  color: white;
+
+
+/* Some little graphics */
+
+.separator {
+  display: table;
+  margin: 0 auto;
+}
+.separator i {
+  background-color: #564f6f;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 0 10px;
 }
 
-h2 {
-  font-size: 2em;
-  font-family: "DM Mono", monospace;
-  color: white;
+
+.shape {
+  position: absolute;
+  z-index: 0;
 }
 
-h3 {
-  font-family: "DM Mono", monospace;
+#shape-circle-1 {
+  left: -100px;
+  bottom: -100px;
+  background: linear-gradient(90deg, #d53f99, #7f39b9, #436fff);
+  height: 50vh;
+  width: 50vh;
+  border-radius: 50vh;
+  z-index:1;
 }
 
-.main {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  position: relative;
-  justify-content: center;
-  align-items: center;
+#shape-circle-2 {
+  top: -150px;
+  right: -150px;
+  background: linear-gradient(90deg, #d53f99, #7f39b9, #436fff);
+  height: 90vh;
+  width: 90vh;
+  border-radius: 80vh;
+  
 }
 
-#experience,
-#projects,
-#aboutme {
-  color: black;
+#shape-circle-3 {
+  right: -100px;
+  bottom: -100px;
+  background-color: #4c495d;
+  height: 70vh;
+  width: 70vh;
+  border-radius: 50vh;
 }
 
-.container {
-  width: 100%;
+#shape-circle-4 {
+  left: -150px;
+  top: -150px;
+  background-color: #4c495d;
+  height: 90vh;
+  width: 90vh;
+  border-radius: 90vh;
 }
 
-#aboutme p {
-  color: #d1d7e0;
+#shape-circle-5 {
+  right: -400px;
+  top: 450px;
+  background-color: #4c495d;
+  height: 65vh;
+  width: 65vh;
+  border-radius: 90vh;
 }
 
-#aboutme h4 {
-  color: #802bb1;
-  font-weight: 800;
-  background: #d1d7e0;
+#shape-circle-6 {
+  left: 5%;
+  bottom: 30%;
+  background-color: #4c495d;
+  height: 40vh;
+  width: 40vh;
+  border-radius: 90vh;
 }
-/*# sourceMappingURL=top_background.css.map */
+
+@media (max-width: 480px) {
+  .shape {
+    display: none;
+  }
+}

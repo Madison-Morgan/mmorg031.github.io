@@ -1,0 +1,57 @@
+
+.title-page {
+    height: 370px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .title-page {
+      height: 300px;
+    }
+  }
+
+  
+.user-title-box {
+    justify-content: center;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .user-title-box {
+      padding: 20px;
+    }
+  }
+  
+  .user-title {
+    flex-direction: column;
+    z-index: 5;
+  }
+
+  
+.bg-hero {
+    background-color: #f9f9f9;
+    padding-top: 220px;
+    color: black;
+  }
+  
+  .bg-hero .container {
+    position: inherit;
+  }
+  .bg-hero .container h2 {
+    margin-left: 20px;
+  }
+
+  
+@media screen and (max-width: 900px) {
+    .bg-hero {
+      padding-top: 150px;
+    }
+    .bg-hero .container h1 {
+      text-align: center;
+    }
+    .bg-hero .container h2 {
+      text-align: center;
+      margin-left: 0;
+    }
+    .bg-hero .container a {
+      margin-left: 0;
+    }
+  }

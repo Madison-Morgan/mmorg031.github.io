@@ -1,0 +1,87 @@
+/*Contact info */
+
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px;
+  }
+  .contact input {
+    background-color: #4c495d;
+    border: none;
+    color: #d1d7e0;
+    display: block;
+    font-family: "Consolas", monaco, monospace;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+  .contact textarea {
+    background-color: #4c495d;
+    border: none;
+    color: #d1d7e0;
+    display: block;
+    font-family: "Consolas", monaco, monospace;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+  .contact button {
+    background-color: #4c495d;
+    border: none;
+    color: #d1d7e0;
+    display: block;
+    font-family: "Consolas", monaco, monospace;
+    font-size: 18px;
+    margin-left: auto;
+    padding: 20px;
+    transition: background 0.2s;
+  }
+  .contact button:hover {
+    background-color: #564f56;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+/* Footer Area */
+footer {
+    background-color: #212121;
+    width: 100%;
+    color: black;
+  }
+  footer .footer-main h4 {
+    color: #76bed0;
+    font-size: 22px;
+  }
+  footer .footer-main h3 a {
+    color: #c2e2ea;
+    text-decoration: none;
+    font-size: 42px;
+    padding: 10px;
+  }
+  footer .footer-main h3 a:hover {
+    color: black;
+  }
+  footer .footer-copyright {
+    padding: 30px 0;
+    background-color: #2d283e;
+  }
+  footer .footer-copyright h5 {
+    font-size: 18px;
+    color: #d1d7e0;
+    font-family: "Consolas", monaco, monospace;
+  }
+  footer .footer-copyright p {
+    font-size: 12px;
+    color: #802bb1;
+  }
+
+
+
+
