@@ -25,6 +25,10 @@ html {
   justify-content: space-around;
 }
 
+#hire .bg-dark{
+  background-color: #802BB1;
+}
+
 body {
   /* background: grey; */
   /*background: linear-gradient(#6a1b9a, #ff4081);*/
