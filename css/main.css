@@ -1,29 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-html{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+html {
   scroll-behavior: smooth;
 }
 
-.top-background{
+.top-background {
   background: black;
 }
 
-.social-buttons{
-  display:flex;
+.social-buttons {
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-.social-buttons-items{
-  align-self: auto;
+.buttons-container {
+  background-color: pink;
+  justify-content: center;
+}
+
+.button-wrapper {
+  background-color: linen;
+  width: 80%;
+  justify-content: space-around;
 }
 
 body {
- /* background: grey; */
+  /* background: grey; */
   /*background: linear-gradient(#6a1b9a, #ff4081);*/
   height: 100vh;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: 'Roboto', sans-serif; /*"DM Mono", monospace;*/
+  font-family: "Roboto", sans-serif; /*"DM Mono", monospace;*/
   font-weight: 300;
   /*overflow: hidden;*/
   color: black;
@@ -40,10 +47,10 @@ h1 {
 h2 {
   font-size: 2em;
   font-family: "DM Mono", monospace;
-  color:white;
+  color: white;
 }
 
-h3{
+h3 {
   font-family: "DM Mono", monospace;
 }
 
@@ -57,21 +64,23 @@ h3{
   align-items: center;
 }
 
-#experience, #projects, #aboutme{
+#experience,
+#projects,
+#aboutme {
   color: black;
 }
 
-.container{
+.container {
   width: 100%;
 }
 
-#aboutme p{
-  color: #D1D7E0;
+#aboutme p {
+  color: #d1d7e0;
 }
 
-#aboutme h4{
-  color: #802BB1;
+#aboutme h4 {
+  color: #802bb1;
   font-weight: 800;
-  background: #D1D7E0;
+  background: #d1d7e0;
 }
 /*# sourceMappingURL=top_background.css.map */
