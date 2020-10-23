@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=Roboto&display=swap');
 *,
 *:before,
 *:after {
@@ -16,7 +17,7 @@ html {
 body {
   height: 100vh;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Comfortaa", cursive;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   /*overflow: hidden;*/
   color: black;
@@ -28,44 +29,50 @@ body {
 
 h1 {
   font-size: 64px;
+  font-family: 'DM Mono', monospace;
 }
 
 h2 {
   font-size: 42px;
+  font-family: 'DM Mono', monospace;
 }
 h2 span {
   font-size: 64px;
 }
 
 h4 {
-  font-family: Consolas, monaco, monospace;
+  font-family: 'DM Mono', monospace;
   font-size: 32px;
 }
 
 p {
   font-size: 18px;
-  font-family: Consolas, monaco, monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 480px) {
   h1 {
     font-size: 42px;
+    font-family: 'DM Mono', monospace;
   }
 
   h2 {
     font-size: 32px;
+    font-family: 'DM Mono', monospace;
   }
   h2 span {
     font-size: 42px;
+    font-family: 'DM Mono', monospace;
   }
 
   h4 {
-    font-family: Consolas, monaco, monospace;
+    font-family: 'DM Mono', monospace;
     font-size: 26px;
   }
 
   p {
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
   }
 }
 
@@ -100,15 +107,12 @@ p {
   z-index: 1;
 }
 
-.bg-black {
-  background-color: black;
-}
 .bg-black .container {
   position: inherit;
 }
 
 .bg-light {
-  background-color: #4c495d;
+  background-color: white;
   z-index: 1;
 }
 .bg-light .container {
@@ -183,7 +187,11 @@ p {
 }
 
 .padding-v-lg {
-  padding: 120px 15px;
+  padding: 120px 15px 30px 15px; /*120px 15px;*/
+}
+
+.padding-md-title{
+  padding: 30px 15px;
 }
 
 .padding-md {
@@ -192,6 +200,10 @@ p {
 
 .padding-sm {
   padding: 15px 5px;
+}
+
+.padding-title{
+  padding: 0px 0px 30px 0px;
 }
 
 .height-min-full {
@@ -300,7 +312,6 @@ img{
 
 
 /* Some little graphics */
-
 .separator {
   display: table;
   margin: 0 auto;

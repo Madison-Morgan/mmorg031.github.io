@@ -18,6 +18,7 @@
 	<!-- All my Materialize js initialize scripts -->
 	<script src="js/scripts/nav_init.js"></script>
 	<script src="js/scripts/timeline_init.js"></script>
+	<script src="js/scripts/carousel_init.js"></script>
 	<!-- Import Bootstrap Here -->
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/> -->
 	<!-- All my css sheets are linked here -->
@@ -28,6 +29,8 @@
 	<link rel="stylesheet" href="css/hero.css">
 	<link rel="stylesheet" href="css/project_browser.css">
 	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/skills.css">
+	<link rel="stylesheet" href="css/photo_carousel.css">
 </head>
 
 
@@ -91,27 +94,39 @@
 	</section>
 
 	<!-- skills -->
-	<section id="skills" class="bg-dark">
+	<section id="skills" class="bg-light">
 		<div class="container skills padding-v-lg">
 			<div value="-1" class="slider-arrow text-center">&lsaquo;</div>
 			<div class="col">
-				<h2 class="text-center secondary-header text-white">Skills & Education</h2>
+				<h2 class="text-center text-black">Skills & Education</h2>
 
 				<!-- skill slider -->
 				<div class="skill" style="display: none">
-					<h4 class="text-white">Frontend</h4>
+					<h4 class="text-black">Frontend</h4>
 					<ul>
 						<li>JavaScript (ES6)</li>
 						<li>jQuery</li>
 						<li>CSS3</li>
 						<li>HTML5</li>
-						<li>Canvas</li>
+						<li>Chrome Developer Tools</li>
 						<li>Responsive Design</li>
 					</ul>
 				</div>
 
 				<div class="skill" style="display: none">
-					<h4 class="text-white">Backend</h4>
+					<h4 class="text-black">Frontend Libraries/Frameworks</h4>
+					<ul>
+						<li>Angular</li>
+						<li>React (js,native)</li>
+						<li>Sass</li>
+						<li>Bulma</li>
+						<li>Materialize</li>
+						<li>Boot Strap</li>
+					</ul>
+				</div>
+
+				<div class="skill" style="display: none">
+					<h4 class="text-black">Backend</h4>
 					<ul>
 						<li>PHP</li>
 						<li>MySQL</li>
@@ -160,7 +175,7 @@
 					<h4 class="text-white">Spoken Languages</h4>
 					<ul>
 						<li>English (Native)</li>
-						<li>French (Fluent)</li>
+						<li>French (Intermediate)</li>
 					</ul>
 				</div>
 				<!-- end skill slider -->
@@ -172,97 +187,110 @@
 	<!-- end skills -->
 
 
-	<div id="experience" class="row example-split white">
-		<div class="col-md-12 example-title">
-			<h3>Experience</h3>
+	<section id="experience" class="bg-light">
+		<div class="container skills padding-v-lg">
+			<div class="col">
+				<h1 class="text-black text-center padding-title">Experience</h1>
+
+				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+					<ul class="timeline timeline-split">
+						<li class="timeline-item">
+							<div class="timeline-info">
+								<span>January 2020 - April 2020</span>
+							</div>
+							<div class="timeline-marker"></div>
+							<div class="timeline-content">
+								<h4 class="timeline-title">Junior Programmer @ <a
+										href="https://www.canada.ca/en/treasury-board-secretariat.html"
+										target="blank">Treasurary Board of
+										Canada Secretariat</a></h4>
+								<p>Developed a Python script to automate the process of generating an informative
+									bi-weekly
+									dashboard by extracting data from multiple sources and transforming the data
+									accordingly.
+								</p>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-info">
+								<span>May 2019 - August 2019</span>
+							</div>
+							<div class="timeline-marker"></div>
+							<div class="timeline-content">
+								<h4 class="timeline-title">Research Assistant @ <a
+										href="https://www.zema.de/de/startseite/" target="blank">ZeMA</a></h4>
+								<p>Researched, designed, and implemented an automated assembly
+									sequence planning tool using C# in Visual Studio and Python alongside
+									CAD software. </p>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-info">
+								<span>September 2018 - December 2018</span>
+							</div>
+							<div class="timeline-marker"></div>
+							<div class="timeline-content">
+								<h4 class="timeline-title">Embedded Software Engineer @ <a
+										href="https://www.curtisswright.com/home/default.aspx"
+										target="blank">Curtiss-Wright
+										Defense Solutions</a></h4>
+								<p>developed a security software application to parse, verify and sign images. I also
+									designed a
+									paired command line executable tool to run security application functionality. All
+									while
+									using the agile design methodology and Kanban boards. </p>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-info">
+								<span>May 2018 - August 2018</span>
+							</div>
+							<div class="timeline-marker"></div>
+							<div class="timeline-content">
+								<h4 class="timeline-title">Automation Engineer @ <a href="https://www.lumentum.com/en"
+										target="blank">Lumentum</a></h4>
+								<p>Developed a machine learning algorithm to automate the calibration of tunable lasers
+									using
+									TensorFlow. Constructed a neural network to calibrate tunable lasers
+									efficiently using Tensorflow in the Anaconda IDE. </p>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-info">
+								<span>January 2018 - April 2018</span>
+							</div>
+							<div class="timeline-marker"></div>
+							<div class="timeline-content">
+								<h4 class="timeline-title">Design Verification Engineer @ <a
+										href="https://www.lumentum.com/en" target="blank">Lumentum</a></h4>
+								<p>Developed an automated test suite to perform software verification on
+									complex optical systems using Python. Automated the collection, data
+									analysis, and visualization of a large variety of optical test results using
+									Python.</p>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-info">
+								<span>May 2017 - August 2017</span>
+							</div>
+							<div class="timeline-marker"></div>
+							<div class="timeline-content">
+								<h4 class="timeline-title">IT Service Analyst @ <a
+										href="http://www.ic.gc.ca/eic/site/icgc.nsf/eng/home" target="blank">ISED</a>
+								</h4>
+								<p>Worked as a Configuration Management addition to the team, where I aided my team
+									members
+									in
+									the development of a Configuration Management Data Base and other IT Service
+									Management
+									Tasks. Designed, implemented, and repaired a knowledge base of articles and
+									webpages using HTML and CSS to enhance the user experience.</p>
+							</div>
+						</li>
+				</div>
+			</div>
 		</div>
-		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-			<ul class="timeline timeline-split">
-				<li class="timeline-item">
-					<div class="timeline-info">
-						<span>January 2020 - April 2020</span>
-					</div>
-					<div class="timeline-marker"></div>
-					<div class="timeline-content">
-						<h4 class="timeline-title">Junior Programmer @ <a
-								href="https://www.canada.ca/en/treasury-board-secretariat.html"
-								target="blank">Treasurary Board of
-								Canada Secretariat</a></h4>
-						<p>Developed a Python script to automate the process of generating an informative bi-weekly
-							dashboard by extracting data from multiple sources and transforming the data accordingly.
-						</p>
-					</div>
-				</li>
-				<li class="timeline-item">
-					<div class="timeline-info">
-						<span>May 2019 - August 2019</span>
-					</div>
-					<div class="timeline-marker"></div>
-					<div class="timeline-content">
-						<h4 class="timeline-title">Research Assistant @ <a href="https://www.zema.de/de/startseite/"
-								target="blank">ZeMA</a></h4>
-						<p>Researched, designed, and implemented an automated assembly
-							sequence planning tool using C# in Visual Studio and Python alongside
-							CAD software. </p>
-					</div>
-				</li>
-				<li class="timeline-item">
-					<div class="timeline-info">
-						<span>September 2018 - December 2018</span>
-					</div>
-					<div class="timeline-marker"></div>
-					<div class="timeline-content">
-						<h4 class="timeline-title">Embedded Software Engineer @ <a
-								href="https://www.curtisswright.com/home/default.aspx" target="blank">Curtiss-Wright
-								Defense Solutions</a></h4>
-						<p>developed a security software application to parse, verify and sign images. I also designed a
-							paired command line executable tool to run security application functionality. All while
-							using the agile design methodology and Kanban boards. </p>
-					</div>
-				</li>
-				<li class="timeline-item">
-					<div class="timeline-info">
-						<span>May 2018 - August 2018</span>
-					</div>
-					<div class="timeline-marker"></div>
-					<div class="timeline-content">
-						<h4 class="timeline-title">Automation Engineer @ <a href="https://www.lumentum.com/en"
-								target="blank">Lumentum</a></h4>
-						<p>Developed a machine learning algorithm to automate the calibration of tunable lasers using
-							TensorFlow. Constructed a neural network to calibrate tunable lasers
-							efficiently using Tensorflow in the Anaconda IDE. </p>
-					</div>
-				</li>
-				<li class="timeline-item">
-					<div class="timeline-info">
-						<span>January 2018 - April 2018</span>
-					</div>
-					<div class="timeline-marker"></div>
-					<div class="timeline-content">
-						<h4 class="timeline-title">Design Verification Engineer @ <a href="https://www.lumentum.com/en"
-								target="blank">Lumentum</a></h4>
-						<p>Developed an automated test suite to perform software verification on
-							complex optical systems using Python. Automated the collection, data
-							analysis, and visualization of a large variety of optical test results using
-							Python.</p>
-					</div>
-				</li>
-				<li class="timeline-item">
-					<div class="timeline-info">
-						<span>May 2017 - August 2017</span>
-					</div>
-					<div class="timeline-marker"></div>
-					<div class="timeline-content">
-						<h4 class="timeline-title">IT Service Analyst @ <a
-								href="http://www.ic.gc.ca/eic/site/icgc.nsf/eng/home" target="blank">ISED</a></h4>
-						<p>Worked as a Configuration Management addition to the team, where I aided my team members in
-							the development of a Configuration Management Data Base and other IT Service Management
-							Tasks. Designed, implemented, and repaired a knowledge base of articles and
-							webpages using HTML and CSS to enhance the user experience.</p>
-					</div>
-				</li>
-		</div>
-	</div>
+	</section>
 
 	<!-- projects -->
 	<section id="projects" class="bg-white">
@@ -272,7 +300,7 @@
 		<div id="shape-circle-6" class="shape"></div>
 
 		<div class="container padding-v-lg">
-			<h2 class="text-center padding-md"><span class="text-brand">Projects</span></h2>
+			<h1 class="text-center text-black padding-md-title">Projects</h1>
 
 			<!-- project 1 -->
 			<div class="flex showcase">
@@ -294,7 +322,7 @@
 					</div>
 				</div>
 				<div class="col-3 description">
-					<h4>TwoCan English</h4>
+					<h4>Rock Paper Scissors AI App</h4>
 					<p>I decided to build my own online school scratch after being unable to find a suitable learning
 						management system that had the features I needed. TwoCan English connects language students from
 						around the world with qualified tutors. It is built with PHP on the server interacting with a
@@ -408,22 +436,24 @@
 	<!-- end projects -->
 
 	<!-- what I can do -->
-	<section id="aboutme" class="bg-light angle-right-top">
+	<section id="aboutme" class="bg-light">
 		<div class="container padding-v-lg">
 			<h2 class="text-center padding-md">
-				<span class="text-brand" style="background: white;">About me</span>
+				<span class="text-brand">About me</span>
 				<br>Just a little bit about me...
 			</h2>
 			<div class="flex">
 				<div class="col padding-md text-center">
-					<h4>Rock Solid Code</h4>
-					<p>I'm a developer first and foremost, so I know how to create your website to run across devices
-						using the latest technologies available.</p>
+					<h4>Love to Travel</h4>
+					<p>I'm a developer first and foremost, but i also love to travel. In the summer of 2019 I had the
+						amazing oppurtunity to
+						work in Germany where I travelled all accross Europe! .</p>
 				</div>
 				<div class="col padding-md text-center">
 					<h4>Pixel Perfect Design</h4>
 					<p>I like to keep it simple. My goals are to focus on typography, content and conveying the message
 						that you want to send.</p>
+
 				</div>
 			</div>
 		</div>
@@ -436,8 +466,8 @@
 
 	<!-- contact me -->
 	<div id="hire">
-		<section class="bg-dark">
-			<h2 class="text-center padding-md">Contact Me</h2>
+		<section class="bg-light">
+			<h1 class="text-center padding-md">Contact Me</h1>
 			<form class="contact" action="https://formspree.io/madison.morgan.eng@gmail.com" method="POST">
 				<input type="text" name="name" placeholder="Name">
 				<input type="text" name="_replyto" placeholder="Email">
@@ -466,9 +496,9 @@
 			<a href="https://codepen.io/" target="_blank"><i class="fa fa-codepen"></i></a>
 		</h3>
 	</div> -->
-	<div class="footer-copyright text-white">
-		<h5 class="text-center">&copy; 2020 | Madison Morgan</h5>
-		<p class="text-center">Thank you Bootstrap, Materialize, and Flexbox</p>
+	<div class="footer-copyright text-white bg-dark">
+		<h5 class="text-center bg-dark">&copy; 2020 | Madison Morgan</h5>
+		<p class="text-center bg-dark">Thank you Bootstrap, Materialize, and Flexbox</p>
 	</div>
 </footer>
 <!-- end footer -->
