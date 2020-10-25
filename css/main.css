@@ -24,6 +24,7 @@ body {
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  background: white;
   /*overflow: hidden;*/
   color: black;
   text-align: center;
@@ -396,4 +397,10 @@ img{
   .shape {
     display: none;
   }
+}
+
+/* header for photo-carousel in about me*/
+.photo-carousel-header{
+  background: rgba(255,255,255,0.8);
+  color: black;
 }
