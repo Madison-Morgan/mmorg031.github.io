@@ -6,7 +6,7 @@
 
 #skills h2 {
   font-size: 63px;
-  border-bottom: 10px solid #802bb1;
+  border-bottom: 10px solid white;
 }
 
 .skills .skill {
@@ -15,25 +15,25 @@
 }
 
 .skills .skill h4 {
-  color: black;
-  border-bottom: 10px dashed #802bb1;
+  color: white;
+  border-bottom: 10px dashed white;
 }
 
 .skills .skill ul {
   padding: 20px;
-  color: black;
+  color: white;
 }
 
 .skills .skill ul li {
   list-style-type: none;
-  color: black;
+  color: white;
   font-size: 22px;
 }
   
 .slider-arrow {
   padding: 10px;
   font-size: 64px;
-  color: black;
+  color: white;
   display: flex;
   align-items: center;
   transition: background 0.2s;
@@ -45,5 +45,5 @@
 
 .slider-arrow:hover {
   cursor: pointer;
-  color: #802bb1;
+  color: white;
 }

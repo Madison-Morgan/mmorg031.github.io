@@ -1,6 +1,6 @@
 
 .title-page {
-    height: 370px;
+    height: 270px;
   }
   
   @media screen and (max-width: 900px) {
@@ -27,8 +27,8 @@
 
   
 .bg-hero {
-    background-color: #f9f9f9;
-    padding-top: 220px;
+    background-color:white;
+    padding-top: 150px;
     color: black;
   }
   
