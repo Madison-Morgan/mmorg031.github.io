@@ -103,7 +103,7 @@ p {
 }
 
 .text-brand {
-  color: #802bb1;
+  color: #7510f7;
 }
 
 
@@ -129,6 +129,14 @@ p {
   background-color: #7510f7;
 }
 .bg-brand .container {
+  position: inherit;
+  z-index: 2;
+}
+
+.bg-brand-light {
+  background-color:rgba(117, 16, 247,0.9);
+}
+.bg-brand-light .container {
   position: inherit;
   z-index: 2;
 }
@@ -159,7 +167,7 @@ p {
 }
 
 .btn-dark:hover {
-  background-color: #005a75;
+  background-color: #7510f7;
 }
 
 .btn-outline {
@@ -311,6 +319,10 @@ img{
   z-index: 9999;
 }
 
+img.is-bottom{
+  width:65%;
+}
+
 @media screen and (min-width: 769px){
   .hero-foot img.is-bottom {
     margin-bottom: -0.45rem;
@@ -372,7 +384,7 @@ img{
 #shape-circle-4 {
   left: -150px;
   top: -150px;
-  background-color: #4c495d;
+  background-color: #7510f7;
   height: 90vh;
   width: 90vh;
   border-radius: 90vh;
@@ -381,7 +393,7 @@ img{
 #shape-circle-5 {
   right: -400px;
   top: 450px;
-  background-color: #4c495d;
+  background-color: #7510f7;
   height: 65vh;
   width: 65vh;
   border-radius: 90vh;
@@ -390,7 +402,7 @@ img{
 #shape-circle-6 {
   left: 5%;
   bottom: 30%;
-  background-color: #4c495d;
+  background-color: #7510f7;
   height: 40vh;
   width: 40vh;
   border-radius: 90vh;

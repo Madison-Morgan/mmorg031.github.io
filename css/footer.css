@@ -7,9 +7,9 @@
 }
 
 .contact input {
-  background-color: #4c495d;
+  background-color: white;
   border: none;
-  color: #d1d7e0;
+  color: black;
   display: block;
   font-size: 14px;
   margin-bottom: 20px;
@@ -18,9 +18,9 @@
 }
 
 .contact textarea {
-    background-color: #4c495d;
+    background-color: white;
     border: none;
-    color: #d1d7e0;
+    color: black;
     display: block;
     font-size: 14px;
     margin-bottom: 20px;
@@ -28,9 +28,9 @@
     width: 100%;
   }
   .contact button {
-    background-color: #4c495d;
+    background-color: white;
     border: none;
-    color: #d1d7e0;
+    color:black;
     display: block;
     font-size: 18px;
     margin-left: auto;
@@ -38,7 +38,7 @@
     transition: background 0.2s;
   }
   .contact button:hover {
-    background-color: #564f56;
+    background-color: #7510f7;
     cursor: pointer;
   }
 
@@ -59,12 +59,12 @@ footer .footer-copyright {
 
 footer .footer-copyright h5 {
   font-size: 18px;
-  color: #d1d7e0;
+  color: white;
 }
 
 footer .footer-copyright p {
   font-size: 12px;
-  color: #802bb1;
+  color: white;
 }
 
 

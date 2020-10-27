@@ -3,15 +3,15 @@ a {
   color: #7510f7;
 }
 a:hover {
-  color: rgba(128, 43, 177,0.5);
+  color: rgba(117, 16, 247,0.9);
   text-decoration: none;
 }
 
 mobile-nav.a{
-  color: #802bb1;
+  color: #7510f7;
 }
 mobile-nav.a:hover {
-  color: rgba(128, 43, 177,0.5);
+  color:rgba(117, 16, 247,0.9);
   text-decoration: none;
 }
 
@@ -72,7 +72,7 @@ mobile-nav.a:hover {
   width: 15px;
 }
 .timeline-marker:before {
-  background: #802bb1;
+  background: #7510f7;
   border: 3px solid transparent;
   border-radius: 100%;
   content: "";
@@ -100,7 +100,7 @@ mobile-nav.a:hover {
 
 .timeline-item:not(.period):hover .timeline-marker:before {
   background: transparent;
-  border: 3px solid #802bb1;
+  border: 3px solid #7510f7;
 }
 
 /*----- TIMELINE CONTENT -----*/
@@ -128,8 +128,8 @@ mobile-nav.a:hover {
   top: 0;
   bottom: 30px;
   position: absolute;
-  border-top: 3px solid #CCD5DB;
-  border-bottom: 3px solid #CCD5DB;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
 }
 .period .timeline-marker:after {
   content: "";
@@ -248,9 +248,9 @@ mobile-nav.a:hover {
 ----------------------------------------------*/
 .marker-outline .timeline-marker:before {
   background: transparent;
-  border-color: #802bb1;
+  border-color: #7510f7;
 }
 .marker-outline .timeline-item:hover .timeline-marker:before {
-  background: #802bb1;
+  background: #7510f7;
 }
 
