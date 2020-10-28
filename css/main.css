@@ -21,6 +21,8 @@ img{
 
 #map { 
   position: absolute; 
+  height: 100px;
+  width: 100px;
   top: 0; 
   bottom: 0; 
   width: 100%; 
