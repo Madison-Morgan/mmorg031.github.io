@@ -29,6 +29,9 @@
 		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
 		crossorigin="anonymous"></script>
 
+	<!-- Import  Mapbox GL JS-->
+	<script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+	<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
 
 	<!-- All my css sheets are linked here -->
 	<link rel="stylesheet" href="css/main.css">
@@ -361,7 +364,7 @@
 
 			<!-- project 1 -->
 			<div class="flex showcase">
-				<div class="col-2">
+				<div class="col-4">
 					<div class="browser">
 						<div class="browser-body">
 							<img class="d-block"
@@ -370,12 +373,12 @@
 						</div>
 					</div>
 					<div class="text-center">
-						<a class="btn btn-sm btn-dark" href="https://twocan.co" target="_blank">
-							<i class="fa fa-external-link"></i> Try it
+						<a class="btn btn-sm btn-dark" href="" target="_blank">
+							<i class="fa fa-external-link"></i> Check It!
 						</a>
 					</div>
 				</div>
-				<div class="col-3 description">
+				<div class="col-8 description">
 					<h4>Rock Paper Scissors AI App</h4>
 					<p>I decided to build my own online school scratch after being unable to find a suitable learning
 						management system that had the features I needed. TwoCan English connects language students from
@@ -409,14 +412,14 @@
 
 			<!-- project 2 -->
 			<div class="flex showcase">
-				<div class="col-3 order-2 description text-right">
+				<div class="col-8 order-2 description text-center">
 					<h4>Admin Panel</h4>
 					<p>The responsive admin panel is updated automatically via AJAX with the latest bookings, payments
 						and lessons to keep on top of tasks. It allows admins to update student and teacher profiles. It
 						also allows them to assign, curate, preview and write curriculum with a custom course content
 						creator. In addition, admins can create blog posts, view student statistics and and export class
 						logs to CSV.</p>
-					<div class="technologies">
+					<div class="technologies text-center">
 						<h5>Technologies used</h5>
 						<span>Mailgun API</span>
 						<span>CSS3</span>
@@ -431,13 +434,18 @@
 						<span>Mustach</span>
 					</div>
 				</div>
-				<div class="col-2 order-1">
+				<div class="col-4 order-1">
 					<div class="browser">
 						<div class="browser-body">
 							<img class="d-block"
 								src="https://res.cloudinary.com/dgqsblbgk/image/upload/v1506083534/project_2_edcrjc.png"
 								alt="">
 						</div>
+					</div>
+					<div class="text-center">
+						<a class="btn btn-sm btn-dark" href="" target="_blank">
+							<i class="fa fa-external-link"></i> Check It!
+						</a>
 					</div>
 				</div>
 			</div>
@@ -447,7 +455,7 @@
 
 			<!-- project 3 -->
 			<div class="flex showcase">
-				<div class="col-2">
+				<div class="col-4">
 					<div class="browser">
 						<div class="browser-body">
 							<img class="d-block"
@@ -455,8 +463,13 @@
 								alt="">
 						</div>
 					</div>
+					<div class="text-center">
+						<a class="btn btn-sm btn-dark" href="" target="_blank">
+							<i class="fa fa-external-link"></i> Check It!
+						</a>
+					</div>
 				</div>
-				<div class="col-3 description">
+				<div class="col-8 description">
 					<h4>Virtual Classroom</h4>
 					<p>I wanted to provide students with the best learning experience possible so I designed our online
 						classroom from the bottom up. Powered through Websockets via the Pusher API, the online
@@ -517,6 +530,7 @@
 
 				</div>
 			</div>
+			<div id="map"></div>
 		</div>
 	</section>
 	<!-- end what I can do -->
@@ -543,6 +557,7 @@
 	<!-- import some scripts at the end of the body to make sure they work-->
 	<script type="text/javascript" src="js/scripts/nav_init.js"></script>
 	<script type="text/javascript" src="js/scripts/carousel_init.js"></script>
+	<script type="text/javascript" src="js/scripts/map_init.js"></script>
 </body>
 
 <!-- footer -->
@@ -553,9 +568,5 @@
 	</div>
 </footer>
 <!-- end footer -->
-
-<!-- TO DO LANGUAGES , IDEs, HACKATHONS, ETC I KNOW!!!!!!-->
-<!-- TO DO MORE INDEPTH ABOUT ME MENTION TRAVELLING!!!!!-->
-<!-- INTERACTIVE MAP -->
 
 </html>

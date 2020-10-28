@@ -19,6 +19,13 @@ img{
   height: auto;
 }
 
+#map { 
+  position: absolute; 
+  top: 0; 
+  bottom: 0; 
+  width: 100%; 
+}
+
 body {
   height: 100vh;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -162,12 +169,13 @@ p {
 }
 
 .btn-dark {
-  color: black;
-  background-color: #212121;
+  color: white;
+  background-color:black;
 }
 
 .btn-dark:hover {
-  background-color: #7510f7;
+  background-color: #212121;
+  color: white;
 }
 
 .btn-outline {
@@ -259,6 +267,10 @@ p {
   margin: 0 15px;
 }
 
+.col-3-test {
+  flex: 3;
+  margin: 0 15px;
+}
 
 
 @media screen and (max-width: 900px) {
