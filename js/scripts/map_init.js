@@ -5,10 +5,10 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibW1vcmcwMzEiLCJhIjoiY2tndGxmNnhnMDRtaTJ5cWY0Z
 var map = new mapboxgl.Map({
 container: 'map', // container id
 style: 'mapbox://styles/mapbox/dark-v10', // style URL
-center: [-74.5, 40], // starting position [lng, lat]
-zoom: 6 // starting zoom
+center: [49.24, 6.99], // starting position [lng, lat]
+zoom: 3 // starting zoom
 });
 
 var marker = new mapboxgl.Marker()
-.setLngLat([12.550343,55.66])
+.setLngLat([49.24, 6.99])
 .addTo(map);

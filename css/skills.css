@@ -36,7 +36,8 @@
   color: white;
   display: flex;
   align-items: center;
-  transition: background 0.2s;
+  /*transition: background 0.2s;*/
+  transition: transform .2s;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -46,4 +47,5 @@
 .slider-arrow:hover {
   cursor: pointer;
   color: white;
+  transform: scale(1.5);
 }

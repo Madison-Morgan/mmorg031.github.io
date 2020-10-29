@@ -57,14 +57,14 @@
                 $(this.$skill[j]).show();
             }
             else if (value > 0) {
-                this.animateCSS($(this.$skill[j]), "fadeInLeft");
+                this.animateCSS($(this.$skill[j]), "fadeIn");
                 /* $(this.$skill[j]).addClass("animate__animated animate__fadeInLeft").show()
                 .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
                     $(this.$skill[j]).removeClass("animate__animated animate__fadeInLeft");
                   }) */
             }
             else {//else neg transition, transition to left
-                this.animateCSS($(this.$skill[j]), "fadeInRight");
+                this.animateCSS($(this.$skill[j]), "fadeIn");
                 /* $(this.$skill[j]).addClass("animate__animated animate__fadeInRight").show()
                 .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
                     $(this.$skill[j]).removeClass("animate__animated animate__fadeInRight");
