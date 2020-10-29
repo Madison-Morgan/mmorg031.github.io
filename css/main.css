@@ -21,8 +21,8 @@ img{
 
 #map { 
   position: absolute; 
-  height: 100px;
-  width: 100px;
+  height: 500px;
+  width: 500px;
   top: 0; 
   bottom: 0; 
   width: 100%; 
@@ -146,6 +146,14 @@ p {
   background-color:rgba(117, 16, 247,0.9);
 }
 .bg-brand-light .container {
+  position: inherit;
+  z-index: 2;
+}
+
+.bg-brand-lightest {
+  background-color: #b797e4
+}
+.bg-brand-lightest .container {
   position: inherit;
   z-index: 2;
 }

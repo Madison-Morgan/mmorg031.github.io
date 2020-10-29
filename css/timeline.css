@@ -20,7 +20,7 @@ mobile-nav.a:hover {
   text-align: center;
   margin-bottom: 20px;
   padding: 1em 0;
-  border-bottom: 1px solid #E4EAEC;
+  /*border-bottom: 1px solid #E4EAEC;*/
 }
 .example-title p {
   margin: 0 auto;
@@ -128,8 +128,8 @@ mobile-nav.a:hover {
   top: 0;
   bottom: 30px;
   position: absolute;
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
+  /* border-top: 3px solid white;
+  border-bottom: 3px solid white; */
 }
 .period .timeline-marker:after {
   content: "";
