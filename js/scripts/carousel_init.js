@@ -2,7 +2,7 @@ $(function(){
     var firstActive = true;
 
     $.ajax({
-        url: "./images/trips",
+        url: "../images/trips",
         success: function (data) {
             $(data).find("a:contains(.jpg)").each(function () {
                 var divItem = $("<div></div>").addClass("carousel-item");  
