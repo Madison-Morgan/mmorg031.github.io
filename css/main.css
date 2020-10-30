@@ -10,10 +10,6 @@
 
 
 /* General CSS applicable to all */
-html {
-  scroll-behavior: smooth;
-}
-
 img{
   width: 100%;
   height: auto;
@@ -395,7 +391,7 @@ img.is-bottom{
 #shape-circle-3 {
   right: -100px;
   bottom: -100px;
-  background-color: #7510f7;
+  background-color: #ac70fa;
   height: 70vh;
   width: 70vh;
   border-radius: 50vh;
@@ -404,7 +400,7 @@ img.is-bottom{
 #shape-circle-4 {
   left: -150px;
   top: -150px;
-  background-color: #7510f7;
+  background-color: #ac70fa;
   height: 90vh;
   width: 90vh;
   border-radius: 90vh;
@@ -413,7 +409,7 @@ img.is-bottom{
 #shape-circle-5 {
   right: -400px;
   top: 450px;
-  background-color: #7510f7;
+  background-color: #ac70fa;
   height: 65vh;
   width: 65vh;
   border-radius: 90vh;
@@ -422,7 +418,7 @@ img.is-bottom{
 #shape-circle-6 {
   left: 5%;
   bottom: 30%;
-  background-color: #7510f7;
+  background-color: #ac70fa;
   height: 40vh;
   width: 40vh;
   border-radius: 90vh;
