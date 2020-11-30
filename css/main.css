@@ -301,7 +301,7 @@ section {
 /* Social Buttons on Main Title */
 
 .buttons-container {
-  padding-top: 20px;
+  padding: 20px 0px;
   justify-content: center;
 }
 
@@ -336,15 +336,18 @@ img{
 }
 
 img.is-bottom{
-  width:65%;
+  width:60%;
+  z-index: 9000;
+  position: inherit;
 }
 
-@media screen and (min-width: 769px){
+/* @media screen and (min-width: 769px){
   .hero-foot img.is-bottom {
     margin-bottom: -0.45rem;
-    max-width: 860px;
+    z-index: 9000;
+    position: inherit;
   }
-}
+} */
 
 
 
@@ -365,7 +368,7 @@ img.is-bottom{
 
 .shape {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
 }
 
 #shape-circle-1 {
@@ -375,7 +378,7 @@ img.is-bottom{
   height: 50vh;
   width: 50vh;
   border-radius: 50vh;
-  z-index:1;
+  
 }
 
 #shape-circle-2 {

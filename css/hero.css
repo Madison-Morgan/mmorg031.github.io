@@ -1,13 +1,13 @@
 
-.title-page {
-    height: 270px;
+/* .title-page {
+    height: 470px;
   }
   
   @media screen and (max-width: 900px) {
     .title-page {
-      height: 300px;
+      height: 400px;
     }
-  }
+  } */
 
   
 .user-title-box {
@@ -28,7 +28,7 @@
   
 .bg-hero {
     background-color:white;
-    padding-top: 150px;
+    padding-top: 130px;
     color: black;
   }
   
